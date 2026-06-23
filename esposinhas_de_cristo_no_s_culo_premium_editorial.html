@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esposinhas de Cristo no Século</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond para títulos editoriais e Plus Jakarta Sans para leitura leve -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        neutral: {
+                            50: '#FDFDFB',   /* Alabastro / Off-white super limpo */
+                            100: '#F4F2EB',  /* Tom suave de areia molhada */
+                            200: '#EAE5DA',  /* Linho claro */
+                            800: '#2A2725',  /* Preto carvão suave para excelente legibilidade */
+                            900: '#1C1A19',
+                        },
+                        rose: {
+                            100: '#F9F1EF',  /* Rosa quartzo ultra desbotado */
+                            200: '#ECCEC9',  /* Rosa antigo acinzentado */
+                            700: '#9E6F69',  /* Rosa queimado sofisticado */
+                            800: '#7D514B',  /* Terracota rosado profundo */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFDFB;
+            letter-spacing: -0.01em;
+        }
+        .editorial-border {
+            border-bottom: 1px solid rgba(158, 111, 105, 0.15);
+        }
+        .nav-link-active {
+            color: #7D514B;
+            border-bottom: 1px solid #7D514B;
+        }
+    </style>
+</head>
+<body class="font-sans text-neutral-800 antialiased selection:bg-rose-100 selection:text-rose-800">
+
+    <div class="border-b border-neutral-100 bg-neutral-50/50 py-3 text-center text-[11px] tracking-[0.15em] text-rose-700 uppercase font-medium">
+        “Vivendo no mundo, amo a meu Jesus” — Santa Teresinha do Menino Jesus
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- O cabeçalho agora exibe estritamente a imagem enviada, sem textos ou filtros invasivos por cima -->
+        <header class="mb-10 rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.03)] border border-neutral-100">
+            <img 
+                src="WhatsApp Image 2026-06-23 at 7.30.06 PM(1).jpeg" 
+                alt="Esposinhas de Cristo no Século - Banner Oficial" 
+                class="w-full h-auto object-cover max-h-[460px] block"
+            />
+        </header>
+
+        <nav class="editorial-border pb-6 mb-12">
+            <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-xs tracking-[0.2em] uppercase font-medium text-neutral-800/70">
+                <button onclick="switchTab('inicio')" class="nav-link nav-link-active hover:text-rose-700 transition-all duration-300 pb-1">
+                    Início
+                </button>
+                <button onclick="switchTab('sobre')" class="nav-link hover:text-rose-700 transition-all duration-300 pb-1">
+                    Sobre
+                </button>
+                <button onclick="switchTab('espiritualidade')" class="nav-link hover:text-rose-700 transition-all duration-300 pb-1">
+                    Espiritualidade
+                </button>
+                <button onclick="switchTab('contato')" class="nav-link hover:text-rose-700 transition-all duration-300 pb-1">
+                    Contato
+                </button>
+            </div>
+        </nav>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- COLUNA ESQUERDA: Artigos do Blog (8 Colunas) -->
+            <div class="lg:col-span-8 space-y-16">
+                
+                <!-- TAB CONTENT: INÍCIO & ESPIRITUALIDADE -->
+                <div id="blog-posts-container" class="space-y-16 transition-opacity duration-300">
+                    
+                    <!-- ARTIGO 1: Carisma -->
+                    <article class="blog-post group" data-category="Vocação">
+                        <div class="overflow-hidden rounded-2xl mb-6 bg-neutral-100 border border-neutral-100">
+                            <img 
+                                src="WhatsApp Image 2026-06-23 at 7.30.04 PM(1).jpeg" 
+                                alt="Representação das Santas Inês e Filomena" 
+                                class="w-full h-auto object-cover max-h-[480px] transition-transform duration-700 group-hover:scale-102"
+                            />
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-2 text-xs tracking-wider text-rose-700 uppercase font-semibold">
+                                <span>Vocação</span>
+                                <span class="text-neutral-200">|</span>
+                                <span class="text-neutral-800/40 font-normal normal-case">23 de Junho de 2026</span>
+                            </div>
+                            <h2 class="font-serif text-3xl sm:text-4xl text-neutral-900 font-normal leading-tight hover:text-rose-800 transition">
+                                O Carisma das Esposinhas de Cristo no Século: Viver o Claustro na Alma
+                            </h2>
+                            <p class="text-neutral-800/80 leading-relaxed font-light text-md">
+                                Como as santas virgens mártires nos ensinam, o coração de uma noiva de Cristo pertence única e exclusivamente a Ele. Mas qual é o chamado para as almas que vivem "no século" — ou seja, no meio do mundo, em suas casas, faculdades e trabalhos cotidianos?
+                            </p>
+                            <p class="text-neutral-800/80 leading-relaxed font-light text-md">
+                                Ser uma esposa no século significa erguer um claustro interior e inviolável no próprio peito. É caminhar entre as correrias do dia a dia com os olhos fitos na eternidade, transformando cada pequeno dever doméstico, cada palavra de caridade e cada gesto de modéstia em um perfume de suave odor para o Divino Esposo.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- ARTIGO 2: Sagrado Coração -->
+                    <article class="blog-post group" data-category="Devocional">
+                        <div class="overflow-hidden rounded-2xl mb-6 bg-neutral-100 border border-neutral-100">
+                            <img 
+                                src="WhatsApp Image 2026-06-23 at 7.30.04 PM.jpeg" 
+                                alt="Mês do Sagrado Coração de Jesus" 
+                                class="w-full h-auto object-cover max-h-[480px] transition-transform duration-700 group-hover:scale-102"
+                            />
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-2 text-xs tracking-wider text-rose-700 uppercase font-semibold">
+                                <span>Devocional</span>
+                                <span class="text-neutral-200">|</span>
+                                <span class="text-neutral-800/40 font-normal normal-case">18 de Junho de 2026</span>
+                            </div>
+                            <h2 class="font-serif text-3xl sm:text-4xl text-neutral-900 font-normal leading-tight hover:text-rose-800 transition">
+                                Mês do Sagrado Coração de Jesus: Entregar Nossos Afetos ao Altar Divino
+                            </h2>
+                            <p class="text-neutral-800/80 leading-relaxed font-light text-md">
+                                Temos em mãos o precioso tesouro litúrgico do "Mês do Sagrado Coração de Jesus", obra consoladora do Monsenhor Doutor José Basílio Pereira. Folhear estas páginas amareladas pelo tempo é reviver as promessas de amor que Nosso Senhor fez a Santa Margarida Maria Alacoque.
+                            </p>
+                            <p class="text-neutral-800/80 leading-relaxed font-light text-md">
+                                Como esposas de Jesus no século, a nossa principal missão de amor é a reparação. Cada ofensa cometida pelo mundo secularizado deve ser correspondida por um ato de amor fervoroso em nossa rotina comum. Ofereça sua comunhão reparadora, reze diante do sacrário e declare ao Sagrado Coração que Ele não está sozinho.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- ARTIGO 3: Modéstia -->
+                    <article class="blog-post group" data-category="Modéstia">
+                        <div class="overflow-hidden rounded-2xl mb-6 bg-neutral-100 border border-neutral-100">
+                            <img 
+                                src="WhatsApp Image 2026-06-23 at 7.30.05 PM(1).jpeg" 
+                                alt="Modéstia Católica e Nobreza Interior" 
+                                class="w-full h-auto object-cover max-h-[480px] transition-transform duration-700 group-hover:scale-102"
+                            />
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-2 text-xs tracking-wider text-rose-700 uppercase font-semibold">
+                                <span>Modéstia</span>
+                                <span class="text-neutral-200">|</span>
+                                <span class="text-neutral-800/40 font-normal normal-case">14 de Junho de 2026</span>
+                            </div>
+                            <h2 class="font-serif text-3xl sm:text-4xl text-neutral-900 font-normal leading-tight hover:text-rose-800 transition">
+                                A Modéstia como Testemunho de Pertença: Guardar-se para o Rei
+                            </h2>
+                            <p class="text-neutral-800/80 leading-relaxed font-light text-md">
+                                A modéstia católica exterior não é mero tradicionalismo estético; é o espelho de um sacrário interior bem guardado. Quando nos vestimos com nobreza, decência e suavidade, estamos proclamando silenciosamente ao mundo que nossos corpos e almas pertencem a um Reino Eterno.
+                            </p>
+                            <p class="text-neutral-800/80 leading-relaxed font-light text-md">
+                                Tecidos modestos, caimento digno e gestos recolhidos: cada detalhe reflete a formosura do Esposo Celestial. Diante da vulgaridade reinante no século, que sejamos nós a restaurar o pudor, a doçura e a santa dignidade da mulher cristã.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- TAB CONTENT: SOBRE (Oculto por padrão, ativado via JS de forma limpa) -->
+                <div id="tab-sobre" class="hidden space-y-8 transition-opacity duration-300">
+                    <h2 class="font-serif text-4xl text-neutral-900 font-normal tracking-wide">O que é ser uma Esposinha no Meio do Mundo?</h2>
+                    <div class="w-12 h-[1px] bg-rose-700"></div>
+                    <p class="text-neutral-800/85 leading-relaxed font-light text-md">
+                        O termo carinhoso "Esposinhas de Cristo no Século" nasceu da necessidade de muitas jovens e senhoras leigas de consagrarem silenciosamente suas rotinas e corações a Nosso Senhor. Sem se apartarem do mundo físico por meio de grades conventuais, elas assumem a missão de ser o perfume da Igreja onde quer que forem.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                        <div class="p-6 bg-neutral-100 rounded-xl border border-neutral-200/50">
+                            <h4 class="font-serif text-lg text-neutral-900 font-medium mb-2">Oração Contemplativa</h4>
+                            <p class="text-sm text-neutral-800/80 font-light leading-relaxed">Viver em estado constante de diálogo interior com o Senhor por meio da oração silenciosa e da meditação de obras clássicas da Igreja Católica.</p>
+                        </div>
+                        <div class="p-6 bg-neutral-100 rounded-xl border border-neutral-200/50">
+                            <h4 class="font-serif text-lg text-neutral-900 font-medium mb-2">Testemunho de Modéstia</h4>
+                            <p class="text-sm text-neutral-800/80 font-light leading-relaxed">Traduzir o recolhimento interior em vestimentas dignas, elegantes e discretas, refletindo a doçura e realeza da Virgem Maria.</p>
+                        </div>
+                    </div>
+                    <p class="text-neutral-800/85 leading-relaxed font-light text-md">
+                        Nossas santas inspiradoras, como Santa Rosa de Lima e Santa Filomena, souberam sofrer, amar e entregar-se de maneira irrepreensível, demonstrando que a juventude e as dificuldades do cotidiano não são impedimentos para a santidade heróica.
+                    </p>
+                </div>
+
+                <!-- TAB CONTENT: CONTATO (Formulário Limpo e Moderno) -->
+                <div id="tab-contato" class="hidden space-y-8 transition-opacity duration-300">
+                    <h2 class="font-serif text-4xl text-neutral-900 font-normal tracking-wide">Fale com o Apostolado</h2>
+                    <div class="w-12 h-[1px] bg-rose-700"></div>
+                    <p class="text-neutral-800/70 font-light">Querida irmã, deseja conversar, buscar conselho espiritual ou enviar alguma intenção? Escreva-nos através do canal oficial abaixo.</p>
+                    
+                    <form onsubmit="handleSubmitContact(event)" class="space-y-6 max-w-xl">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-[10px] tracking-[0.15em] uppercase font-semibold text-neutral-800/70 mb-2">Seu Nome</label>
+                                <input required type="text" class="w-full bg-neutral-100/50 border border-neutral-200/60 px-4 py-3 text-sm rounded-lg focus:outline-none focus:border-rose-700 transition" placeholder="Nome Completo" />
+                            </div>
+                            <div>
+                                <label class="block text-[10px] tracking-[0.15em] uppercase font-semibold text-neutral-800/70 mb-2">Seu E-mail</label>
+                                <input required type="email" class="w-full bg-neutral-100/50 border border-neutral-200/60 px-4 py-3 text-sm rounded-lg focus:outline-none focus:border-rose-700 transition" placeholder="maria@exemplo.com" />
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] tracking-[0.15em] uppercase font-semibold text-neutral-800/70 mb-2">Mensagem ou Intenção</label>
+                            <textarea required rows="5" class="w-full bg-neutral-100/50 border border-neutral-200/60 px-4 py-3 text-sm rounded-lg focus:outline-none focus:border-rose-700 transition resize-none" placeholder="Escreva aqui com sinceridade e caridade..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-rose-800 text-white text-xs tracking-[0.2em] uppercase font-medium px-8 py-3.5 rounded-lg hover:bg-rose-700 transition shadow-sm">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                    <div id="contact-success" class="hidden p-4 bg-neutral-100 border border-neutral-200 text-rose-800 rounded-lg text-sm font-light">
+                        Sua mensagem foi recebida e será guardada em nossas orações. Que Nosso Senhor lhe abençoe.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COLUNA DIREITA: Sidebar Minimalista (4 Colunas) -->
+            <div class="lg:col-span-4 space-y-12">
+                
+                <!-- QUEM SOMOS PROFILE -->
+                <div class="space-y-4">
+                    <h3 class="font-serif text-xl text-neutral-900 font-medium tracking-wide">O Apostolado</h3>
+                    <div class="w-8 h-[1px] bg-rose-700"></div>
+                    <p class="text-xs text-neutral-800/80 leading-relaxed font-light">
+                        Um refúgio de piedade e modéstia para moças que buscam a santidade de vida consagrada interiormente a Jesus Cristo, enquanto cumprem com amor e dignidade os seus deveres no século.
+                    </p>
+                </div>
+
+                <!-- SANTAS PROTETORAS (Lista com as Imagens Fornecidas) -->
+                <div class="space-y-8">
+                    <h3 class="font-serif text-xl text-neutral-900 font-medium tracking-wide">Santas Protetoras</h3>
+                    <div class="w-8 h-[1px] bg-rose-700"></div>
+                    
+                    <div class="space-y-6">
+                        <!-- Santa Filomena -->
+                        <div class="group border-b border-neutral-100 pb-6">
+                            <div class="overflow-hidden rounded-xl mb-3 bg-neutral-100">
+                                <img 
+                                    src="WhatsApp Image 2026-06-23 at 7.30.06 PM.jpeg" 
+                                    alt="Santa Filomena" 
+                                    class="w-full h-56 object-cover object-center transition-transform duration-500 group-hover:scale-102"
+                                />
+                            </div>
+                            <h4 class="font-serif text-lg text-neutral-900 font-medium">Santa Filomena</h4>
+                            <p class="text-[11px] tracking-widest text-rose-700 uppercase font-medium mb-1">Mártir da Pureza</p>
+                            <p class="text-xs text-neutral-800/70 font-light leading-relaxed">
+                                Modelo supremo de fidelidade e firmeza juvenil. Padroeira das virgens consagradas e âncora de fidelidade ao Divino Esposo.
+                            </p>
+                        </div>
+
+                        <!-- Santa Rosa de Lima -->
+                        <div class="group">
+                            <div class="overflow-hidden rounded-xl mb-3 bg-neutral-100">
+                                <img 
+                                    src="WhatsApp Image 2026-06-23 at 7.30.05 PM.jpeg" 
+                                    alt="Santa Rosa de Lima" 
+                                    class="w-full h-56 object-cover object-center transition-transform duration-500 group-hover:scale-102"
+                                />
+                            </div>
+                            <h4 class="font-serif text-lg text-neutral-900 font-medium">Santa Rosa de Lima</h4>
+                            <p class="text-[11px] tracking-widest text-rose-700 uppercase font-medium mb-1">Flor das Américas</p>
+                            <p class="text-xs text-neutral-800/70 font-light leading-relaxed">
+                                Primeira santa do continente. Viveu a clausura espiritual de forma heróica na casa de sua própria família.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-neutral-100 bg-neutral-50/40 mt-24 py-12 px-4 text-center">
+        <div class="max-w-xl mx-auto space-y-4">
+            <h3 class="font-serif text-2xl text-rose-800 font-normal italic">Esposinhas de Cristo no Século</h3>
+            <p class="text-[11px] text-neutral-800/50 tracking-wider">
+                Um espaço dedicado à espiritualidade feminina tradicional e ao cultivo das virtudes evangélicas.
+            </p>
+            <p class="text-[9px] text-neutral-800/40 uppercase tracking-[0.15em] pt-4">
+                © 2026 Apostolado Esposinhas de Cristo no Século. Ad maiorem Dei gloriam.
+            </p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE TAB SWITCHER -->
+    <script>
+        function switchTab(tabId) {
+            // Seções principais
+            const blogPosts = document.getElementById('blog-posts-container');
+            const tabSobre = document.getElementById('tab-sobre');
+            const tabContato = document.getElementById('tab-contato');
+
+            // Oculta todas
+            blogPosts.classList.add('hidden');
+            tabSobre.classList.add('hidden');
+            tabContato.classList.add('hidden');
+
+            // Remove classe ativa de todos os botões de menu
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => {
+                link.classList.remove('nav-link-active', 'text-rose-700');
+            });
+
+            // Adiciona classe ativa com base no evento ou correspondência
+            const clickedBtn = window.event ? window.event.currentTarget : null;
+            if (clickedBtn) {
+                clickedBtn.classList.add('nav-link-active');
+            }
+
+            // Exibe a aba de destino correspondente
+            if (tabId === 'inicio') {
+                blogPosts.classList.remove('hidden');
+            } else if (tabId === 'sobre') {
+                tabSobre.classList.remove('hidden');
+            } else if (tabId === 'espiritualidade') {
+                blogPosts.classList.remove('hidden');
+                // Role até a área de posts com transição suave
+                window.scrollTo({ top: 480, behavior: 'smooth' });
+            } else if (tabId === 'contato') {
+                tabContato.classList.remove('hidden');
+            }
+
+            // Scroll para o início do conteúdo se não for a rolagem de espiritualidade
+            if (tabId !== 'espiritualidade') {
+                window.scrollTo({ top: 440, behavior: 'smooth' });
+            }
+        }
+
+        // Envio de contato simulado de maneira silenciosa e elegante
+        function handleSubmitContact(event) {
+            event.preventDefault();
+            document.getElementById('contact-success').classList.remove('hidden');
+            event.target.reset();
+            setTimeout(() => {
+                document.getElementById('contact-success').classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
